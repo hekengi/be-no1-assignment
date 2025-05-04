@@ -69,18 +69,3 @@ Enum, 제네릭, 람다 & 스트림을 활용한 고급 계산기 만들기
 ### 4. 5개 초과 시 가장 오래된 결과 자동 삭제
 - 결과 목록이 5개를 초과하면 가장 먼저 추가된 데이터를 자동 삭제
 
----
-
-## 📂 주요 클래스
-
-### `OperatorType.java`
-- Enum 클래스
-- `+`, `-`, `*`, `/` 연산자 정의 및 문자 → Enum 매핑 기능 제공
-
-### `ArithmeticCalculator<T>`
-- 제네릭 계산기 클래스
-- `calculate()`, `getResults()`, `removeOldestResult()`, `filterResultsGreaterThan()` 메서드 포함
-
-### `AppLv3.java`
-- 사용자 입력 처리 및 프로그램 흐름 제어
-- 실수 입력, 결과 출력, 필터 기능, 반복/종료 처리
