@@ -1,11 +1,9 @@
-package org.example;
-
-import org.example.calculator.CalculatorLv2;
+package org.example.Lv2;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class AppLv2 {
     public static void main(String[] args) {
         CalculatorLv2 calculatorLv2 = new CalculatorLv2();
 
@@ -26,7 +24,7 @@ public class Main {
                 int result = calculatorLv2.calculate(num1, num2, operator);
                 System.out.println("결과: " + result);
                 calculatorLv2.setResults(result);
-            } catch (ArithmeticException e) {
+            } catch (ArithmeticException | IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
 
